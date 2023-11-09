@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awsome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- firebase authenticatio link -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+       <!-- Sweet Alert Sdk Link -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login</h1>
+        <input type="email" placeholder="Enter your email" id="email">
+        <br><br>
+        <input type="password" placeholder="Enter your password" id="password">
+        <br><br>
+        <span onclick="forgot()" class="Forgot-password"><a href="#">Forgot Password?</a></span>
+        <br><br>
+        <button onclick="login()">Login</button>
+        <div class="signup-now"><span>
+                Don't have and account? <a href="./signup.html">Signup</a>
+            </span></div>
+        <br>
+        <a onclick="loginwithgoogle()" href="#" class="font-icon"><i class="fa-brands fa-google fa-1"></i></a>
+        <a onclick="loginwithgithub()" href="#" class="font-icon"><i class="fa-brands fa-github fa-1"></i></a>
+        <a onclick="loginwithfacebook()" href="#" class="font-icon"><i class="fa-brands fa-facebook fa-1"></i></a>
+
+    </div>
+<script src="app.js"></script>
+</body>
+
+</html>

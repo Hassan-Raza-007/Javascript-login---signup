@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <!-- firebase authenticatio link -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <!-- Sweet Alert Sdk Link -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    <div class="container" style="height: 350px;">
+        <h1>Signup</h1>
+        <input type="email" placeholder="Enter your email" id="email">
+        <br><br>
+        <input type="password" placeholder="Create your password" id="password">
+        <br><br>
+        <button onclick="signup()">Sign up</button>
+        <br><br>
+        <div class="Login-now"><span>
+                Already have an account? <a href="index.html">Login</a>
+            </span></div>
+    </div>
+<script src="app.js"></script>
+</body>
+
+</html>

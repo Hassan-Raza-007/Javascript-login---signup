@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: right;
+            padding: 10px;
+        }
+
+        .dashboard {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        #logoutButton {
+            display: inline-block;
+            background-color: #f00;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <button onclick="logout()" id="logoutButton">Logout</button>
+    </div>
+    <div class="dashboard">
+        <h1>Welcome to the Dashboard</h1>
+        <!-- Add your dashboard content here -->
+    </div>
+
+    <script src="app.js"></script>
+ 
+</body>
+</html>
